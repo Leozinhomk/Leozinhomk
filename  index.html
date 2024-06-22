@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Beats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="beats-page">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="beats.html">Beats</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <form action="/search" method="get">
+                <input type="text" name="q" placeholder="Pesquisar...">
+                <button type="submit">Buscar</button>
+            </form>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h1>Bem-vindos ao meu catálogo de Beats</h1>
+            <p>Escolha com sabedoria e aproveite</p>
+        </section>
+
+        <section class="carousel">
+            <button class="carousel-button prev">‹</button>
+            <div class="carousel-container">
+                <div class="carousel-item">
+                    <h3>Beat 1</h3>
+                    <audio controls>
+                        <source src="path/to/beat1.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <a href="payment.html?file=beat1.wav" class="buy-button">Comprar</a>
+                </div>
+                <div class="carousel-item">
+                    <h3>Beat 2</h3>
+                    <audio controls>
+                        <source src="path/to/beat2.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <a href="payment.html?file=beat2.wav" class="buy-button">Comprar</a>
+                </div>
+            </div>
+            <button class="carousel-button next">›</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Leozinho m.k. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Define o ano atual no rodapé
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>

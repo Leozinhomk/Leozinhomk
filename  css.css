@@ -1,0 +1,113 @@
+body.beats-page {
+    background-image: linear-gradient(to bottom, #3F51B5, #000);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #3F51B5, #000);
+}
+
+.welcome {
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.carousel-button.prev {
+    left: 0;
+}
+
+.carousel-button.next {
+    right: 0;
+}
+
+audio {
+    width: 100%;
+}
+
+.buy-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+}
